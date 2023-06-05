@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:pupventa/page/config.dart';
-import 'package:pupventa/page/index.dart';
-import 'package:pupventa/page/licencia.dart';
-import 'package:pupventa/page/login_page.dart';
-import 'package:pupventa/page/main_screen.dart';
-import 'package:pupventa/page/registrar.dart';
-import 'package:pupventa/page/userruc.dart';
+import 'package:rmc_pricechecker/page/config.dart';
+import 'package:rmc_pricechecker/page/index.dart';
+import 'package:rmc_pricechecker/page/licencia.dart';
+import 'package:rmc_pricechecker/page/login_page.dart';
+import 'package:rmc_pricechecker/page/main_screen.dart';
+import 'package:rmc_pricechecker/page/registrar.dart';
+import 'package:rmc_pricechecker/page/userruc.dart';
+
+
 
 void main() {
   runApp(MyApp());

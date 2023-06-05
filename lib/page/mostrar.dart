@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_unnecessary_containers, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:pupventa/page/database.dart';
+import 'package:rmc_pricechecker/page/database.dart';
 
 class Mostrar extends StatefulWidget {
   const Mostrar({super.key});

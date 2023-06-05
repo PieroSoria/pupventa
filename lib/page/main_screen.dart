@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pupventa/page/config.dart';
-import 'package:pupventa/page/index.dart';
-import 'package:pupventa/page/mostrar.dart';
+import 'package:rmc_pricechecker/page/config.dart';
+import 'package:rmc_pricechecker/page/index.dart';
+import 'package:rmc_pricechecker/page/mostrar.dart';
+
 
 
 class Principal extends StatefulWidget {

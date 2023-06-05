@@ -3,11 +3,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:pupventa/page/database.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
+import 'package:rmc_pricechecker/page/database.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Index extends StatefulWidget {

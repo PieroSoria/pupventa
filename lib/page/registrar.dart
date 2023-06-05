@@ -4,9 +4,8 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:navigator/navigator.dart';
-import 'package:pupventa/main.dart';
+
 import 'package:mysql1/mysql1.dart';
-import 'package:pupventa/page/userruc.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
@@ -3100,15 +3099,6 @@ class _RegistrarState extends State<Registrar> {
             },
           );
         }
-
-        nombreController.text = '';
-        userController.text = '';
-        telefonoController.text = '';
-        rucController.text = '';
-        razonsocialController.text = '';
-        direccionController.text = '';
-        distritoController.text = '';
-        provinciaController.text = '';
       },
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.blue,
