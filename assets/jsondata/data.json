@@ -1,0 +1,21 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Ejemplo",
+      "usuario": "piero",
+      "clave": "piero",
+      "telefono": "123456789",
+      "ruc": "123456789",
+      "razonsocial": "Ejemplo",
+      "pais": "Ejemplo",
+      "dni": "12345678",
+      "direccion": "Ejemplo",
+      "provincia": "Ejemplo",
+      "departamento": "Ejemplo",
+      "fecha": "01-01-2023"
+    }
+    
+  ]
+}
+
+  
