@@ -6,7 +6,7 @@ import 'package:excel/excel.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:rmc_pricechecker/page/database.dart';
+import 'package:Pricechecker/page/database.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:sqflite/sqflite.dart';

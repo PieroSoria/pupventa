@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rmc_pricechecker/page/config.dart';
-import 'package:rmc_pricechecker/page/index.dart';
-import 'package:rmc_pricechecker/page/mostrar.dart';
+import 'package:Pricechecker/page/config.dart';
+import 'package:Pricechecker/page/index.dart';
+import 'package:Pricechecker/page/mostrar.dart';
 
 
 

@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print, unused_catch_clause, unused_import, unused_local_variable, unrelated_type_equality_checks
 
 import 'dart:ffi';
+import 'package:Pricechecker/api/apimysql.dart';
 import 'package:flutter/material.dart';
 import 'package:navigator/navigator.dart';
 import 'package:http/http.dart' as http;
@@ -28,6 +29,7 @@ class _LoginPageState extends State<LoginPage> {
   void initState() {
     super.initState();
   }
+  final Apiconnect apiconnect = Apiconnect();
 
   Future<void> login(String correo, String pass) async {
     bool isValid = await verificarUsuario(correo, pass);
@@ -626,16 +628,19 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _loginbtn() {
     return ElevatedButton(
-      onPressed: () {
+      onPressed: () async{
         debugPrint("User : ${userController.text}");
         debugPrint("Pass : ${passController.text}");
 
-        String correo = userController.text.trim();
+        String user = userController.text.trim();
         String pass = passController.text.trim();
 
-        if (correo != '' && pass != '' ||
-            correo.isNotEmpty && pass.isNotEmpty) {
-          login(correo, pass);
+        if (user != '' && pass != '' ||
+            user.isNotEmpty && pass.isNotEmpty) {
+          bool loginsuccess = await apiconnect.login2(user, pass);
+          if(loginsuccess){
+            Navigator.pushNamed(context, '/principal');
+          }
         } else {
           showDialog(
             context: context,

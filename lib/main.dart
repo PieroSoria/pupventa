@@ -1,12 +1,11 @@
+import 'package:Pricechecker/page/config.dart';
+import 'package:Pricechecker/page/index.dart';
+import 'package:Pricechecker/page/licencia.dart';
+import 'package:Pricechecker/page/login_page.dart';
+import 'package:Pricechecker/page/main_screen.dart';
+import 'package:Pricechecker/page/registrar.dart';
+import 'package:Pricechecker/page/userruc.dart';
 import 'package:flutter/material.dart';
-import 'package:rmc_pricechecker/page/config.dart';
-import 'package:rmc_pricechecker/page/index.dart';
-import 'package:rmc_pricechecker/page/licencia.dart';
-import 'package:rmc_pricechecker/page/login_page.dart';
-import 'package:rmc_pricechecker/page/main_screen.dart';
-import 'package:rmc_pricechecker/page/registrar.dart';
-import 'package:rmc_pricechecker/page/userruc.dart';
-
 
 
 void main() {
