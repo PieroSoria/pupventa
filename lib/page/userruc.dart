@@ -58,7 +58,7 @@ class _UserrucState extends State<Userruc> {
   }
 
   Future<bool> verificarlicencia(String anual) async {
-    var activo = 1;
+    int activo = 1;
     var contro = ConnectionSettings(
         host: '201.148.107.172',
         port: 3306,
@@ -109,7 +109,7 @@ class _UserrucState extends State<Userruc> {
         db: 'rmcpe_db_checkprice');
     var con = await MySqlConnection.connect(config);
     var result = await con
-        .query("SELECT nlicenia_anual FROM clientes WHERE ruc = ?", [ruc]);
+        .query("SELECT nlicencia_anual FROM clientes WHERE ruc = ?", [ruc]);
     var cont = result.first.fields['nlicencia_anual'] as int;
     var result2 = await con.query(
         "SELECT COUNT(*) AS cont FROM licencia_anual WHERE ruc = ?", [ruc]);
@@ -157,6 +157,8 @@ class _UserrucState extends State<Userruc> {
       var read = await con.query(
           "UPDATE clientes SET nlicencia_anual = ? WHERE ruc = ?",
           [cantuser, ruc]);
+      // ignore: unused_local_variable
+      var delete = await con.query("DELETE FROM licencia_free WHERE user = ?",[user]);
 
       if (comple.affectedRows! > 0) {
         showDialog(

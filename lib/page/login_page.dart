@@ -521,6 +521,10 @@ class _LoginPageState extends State<LoginPage> {
                                       height: 30,
                                     ),
                                     _btnuser(),
+                                    const SizedBox(
+                                      height: 30,
+                                    ),
+                                    _extratext2(),
                                   ],
                                 ),
                               ),
@@ -577,6 +581,10 @@ class _LoginPageState extends State<LoginPage> {
                                 height: 30,
                               ),
                               _btnuser(),
+                              const SizedBox(
+                                height: 30,
+                              ),
+                              _extratext2(),
                             ],
                           ),
                         ],
@@ -714,6 +722,29 @@ class _LoginPageState extends State<LoginPage> {
         width: 350,
         child: Text(
           'REGISTRE SU EMPRESA',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 16,
+          ),
+        ),
+      ),
+    );
+  }
+  Widget _extratext2() {
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.pushNamed(context, '/licencia');
+      },
+      style: ElevatedButton.styleFrom(
+        foregroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 228, 226, 226),
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.symmetric(vertical: 16),
+      ),
+      child: const SizedBox(
+        width: 350,
+        child: Text(
+          'OBTENER LICENCIAS',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 16,
